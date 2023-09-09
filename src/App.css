@@ -1,38 +1,64 @@
-.App {
+/* Styling for LoginForm */
+.login-form {
+  border: 2px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.login-heading {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styling for Navigation */
+.navbar {
+  background-color: #333;
+  color: mediumgray; /* Change background color to medium gray */
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-list {
+  list-style-type: none;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav-item {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white; /* Change link color to white for navigation bar */
+  font-size: 24px; /* Increase the font size to match the navbar */
+
+  /* Button-like styles */
+  padding: 10px 20px; /* Adjust padding for button size */
+  border: 1px solid mediumgray; /* Add a border */
+  border-radius: 5px; /* Add rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+
+  /* Hover state */
+  &:hover {
+    background-color: #555; /* Darker background on hover */
+    color: white; /* Change text color on hover */
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  /* Active state (when clicked) */
+  &:active {
+    background-color: #777; /* Even darker background on click */
   }
 }
